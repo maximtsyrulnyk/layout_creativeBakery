@@ -18,6 +18,8 @@
 }
 
 .product-card {
+  display: flex;
+  flex-direction: column;
   min-width: 0;
   margin-top: 48px;
 
@@ -56,13 +58,13 @@
   }
 
   img {
+    transform-origin: center;
+
     display: block;
+    flex-shrink: 0;
 
     width: 100%;
     height: 356px;
-
-    transform-origin: center;
-
     border-radius: 8px;
 
     object-fit: cover;
@@ -85,18 +87,25 @@
   &__title {
     @include uppercase-text;
 
+    margin: 16px 0 0;
     color: $c-text3;
   }
 
+  &__text {
+    flex-grow: 1;
+    margin: 16px 0;
+  }
+
   &__button {
+    transform-origin: center;
+
     display: inline-flex;
     gap: 4px;
     align-items: center;
+    align-self: flex-start;
 
     padding-top: 4px;
     padding-bottom: 4px;
-
-    transform-origin: center;
 
     color: $c-text2;
     text-decoration: none;

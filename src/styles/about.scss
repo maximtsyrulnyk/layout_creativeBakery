@@ -21,7 +21,7 @@
   &__bottom {
     position: relative;
     z-index: 0;
-    background-image: url('../images/media/crumbs.png');
+    background-image: url('../images/media/Crumbs.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -54,7 +54,7 @@
     }
   }
   @include on-tablet {
-    background-image: url('../images/media/crumbs.png');
+    background-image: url('../images/media/Crumbs.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: calc(100% - 240px) auto;
@@ -63,7 +63,7 @@
     }
   }
   @include on-small-desktop {
-    background-image: url('../images/media/crumbs.png');
+    background-image: url('../images/media/Crumbs.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: min(526px, 100%) min(493px, 100%);
